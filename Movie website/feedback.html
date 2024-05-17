@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>WARNER BROS</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+          <img src="warner-bros.jpg"/>
+        </a>
+        </a>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="Movies.html">movies</a> </li>
+          <li><a href="games$apps.html">games</a></li>
+          <li><a href="collections.html">collection</a></li>
+          <li><a href="#">feedback</a></li>
+        </ul>
+      </nav>
+    <body>
+    
+        <div class="container">
+            <form>
+                <h1>Contact Us form</h1>
+                <input type="text" id="firstname" placeholder="First Name"required>
+                <input type="text" id="lastname" placeholder="Last Name"required>
+                <input type="email" id="email" placeholder="Email"required>
+                <input type="text" id="mobile" placeholder="Mobile"required>
+    <h4>Type your Message here</h4>
+    <textarea required></textarea> 
+    <input type="submit" value="Send" id="button">
+            </form>
+        </div>
+    
+        <style>
+        .container{
+            min-height: 100vh;
+            background: black;
+            display: flex;
+            background: url("https://i.pinimg.com/564x/38/2e/39/382e39f62c99db74b8f1e873f1c1bdfc.jpg") no-repeat center center/cover;   
+            }
+          
+         .container form{
+            width: 670px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            box-shadow:20px 20px 50px rgba(0,0,0,0) ;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter:blur(10px) ;
+            flex-wrap:wrap;
+         }   
+         .container form h1{
+            color: white;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 500px;
+            text-align: center;
+         }
+         .container form input{
+            width:290;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom:2px solid white ;
+         }
+         .container form input ::placeholder{
+            color: #ddd;
+         }
+         .container form #lastName,
+         .containerform #mobile{
+            margin-left: 20px;
+         }
+         .container form h4{
+            color: #fff;
+            font-weight: 300;
+            width: 600px;
+            margin-top: 20px;
+         }
+         .container form textarea{
+            background: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 80px;
+            max-height: 80px;
+         }
+    
+         textarea::-webkit-scrollbar{
+            width: 1rem;
+         }
+    
+         textarea::-webkit-textfield-scrollbar-thumb{
+            background-color: rgba(194,194,194,0.713);
+         }
+         
+         .container form #button{
+            border: none;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #333;
+            padding: 0;
+            margin-right: 500px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+         }
+         .container form #button:hover{
+            opacity: 0.7;
+         }
+         
+    
+    
+    
+    
+    
+    
+    
+        </style>
+        
+    </body>
+    <footer>
+        <class="footer">
+          <nav>
+            <a href="#" class="logo">
+                <img src="logo.jpg"/>
+            </a>
+            <p>TM & C @ Warner Bros. Entertainment inc. All rights reserved</p>
+    
+            <ul class="social-links">
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>                
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+            </ul>
+    
+        
+            <ul class="menu">
+                <li><a href="#">Company</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">PrivacyPolicy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">TermsofUse</a></li>
+                
+            </ul>
+            
+        </div>
+       </footer> 
+
+   
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.js" integrity="sha512-v1aTkv65HxVIr09MzV6eMK2cdYDjS9SlIxxbkcKn3IpNMW2M8xZA5Q4ukp+PS6dMHzTLSxlis1VD6ocAP1Uxmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+
+          },
+          navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+           },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          },
+        });
+      </script>
+
+</body>
+
+</html>
